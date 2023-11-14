@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: omke
+  name: dosnowly
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: omke
+      app: dosnowly
   template:
     metadata:
       labels:
-        app: omke
+        app: dosnowly
     spec:
       containers:
-      - image: okteto.dev/omke:latest
-        name: omke
+      - image: okteto.dev/dosnowly:latest
+        name: dosnowly
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "394fe03d-289a-4dea-b9b5-0bed468260f3"
+          value: "23b94eb1-c4f7-4d7c-a93a-de9d0ac6ede5"
         - name: Vless_Path
-          value: "/394fe03d-289a-4dea-b9b5-0bed468260f3"
+          value: "/vlbeauty22"
         - name: Vmess_UUID
-          value: "5d293e61-305e-4003-ac87-4587b36646aa"
+          value: "23b94eb1-c4f7-4d7c-a93a-de9d0ac6ede5"
         - name: Vmess_Path
-          value: "/5d293e61-305e-4003-ac87-4587b36646aa"
+          value: "/vmbeauty23"
         - name: Share_Path
           value: "/v2link"
